@@ -18,4 +18,4 @@ be "i går". April 24th, 1974 however, will be "onsdag 23. april 1974".
 
 ``:shortmonths``    - Use three character long month names. Default: false
 
-``:absolute_date``  - Always use full dates (no relative texts). Default: false
+``:absolute_date``  - Always output full dates (no relative texts). Default: false
