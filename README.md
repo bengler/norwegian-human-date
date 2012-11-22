@@ -2,8 +2,6 @@
 
 Parses a time / date object into a Norwegian human readable text.
 
-Gir menneske-orienterte relative dato-angivelser.
-
 Tomorrow's dates will be "i morgen". Yesterdays timestamps will
 be "i morgen". April 24th, 1974 however, will be "onsdag 23. april 1974".
 
