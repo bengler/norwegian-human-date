@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = NorwegianHumanDate::VERSION
   s.authors     = ["Bengler AS"]
   s.email       = ["dev@bengler.no"]
-  s.homepage    = "https://github.com/bengler/nowegian-human-date"
+  s.homepage    = "https://github.com/bengler/norwegian-human-date"
   s.summary     = %q{Parses a date into a Norwegian text}
   s.description = %q{Parses a date into a Norwegian text}
 
