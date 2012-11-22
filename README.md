@@ -18,5 +18,5 @@ Onsdag 23. april 1974 derimot, heter "onsdag 23. april 1974".
 ### Options for .relative
 
 ``:now``          - What to concider as now. Default: Time.now
-``:shortmonths``  - Use three character long month names. Default: false
 
+``:shortmonths``  - Use three character long month names. Default: false
