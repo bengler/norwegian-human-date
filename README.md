@@ -1,6 +1,6 @@
 # Norwegian Human Date
 
-Parses a time / date object into a Norwegian human readable text.
+Parses a time / date object into a human readable Norwegian text.
 
 Tomorrow's dates will be "i morgen". Yesterdays timestamps will
 be "i morgen". April 24th, 1974 however, will be "onsdag 23. april 1974".
