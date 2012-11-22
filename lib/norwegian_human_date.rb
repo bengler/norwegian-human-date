@@ -11,6 +11,23 @@ class NorwegianHumanDate
 
   class << self
 
+
+  def formal(time, options={})
+    now = (options[:today] || Time.now).to_time.localtime.midnight
+    time = time.to_time.localtime.midnight
+    shortmonths = options[:shortmonths]
+    monthnames = MONTHS_LONG_NO
+    monthnames = MONTHS_NO if shortmonths
+    if time.year == Time.now.year
+      # "4. juni"
+      WEEKDAYNAMES_NO[time.wday]+" "+time.day.to_s+". "+monthnames[time.month-1]
+    else
+      # "4. juni 2005"
+      WEEKDAYNAMES_NO[time.wday]+" "+time.day.to_s+". "+monthnames[time.month-1]+" "+time.year.to_s
+    end
+
+  end
+
   # Gir menneske-orienterte relative dato-angivelser. I morgen heter
   # "i morgen", i går heter "i går" og lørdag neste uke heter "lørdag
   # neste uke". onsdag 23. april 1974 derimot, heter "onsdag 23. april
@@ -19,7 +36,7 @@ class NorwegianHumanDate
   # Støtter følgende options:
   # <tt>:today</tt> - Hva skal den regne som "nå"? (default: Time.now)
   # <tt>:shortmonths</tt> - Bruke tre bokstavers månedsnavn? (default: false)
-  # <tt>:absolute_date</tt> - Bruk alltid full dato (default: false)
+  # <tt>:absolute_date</tt> - Vis alltid dato (default: false)
 
   def relative(time, options = {})
 

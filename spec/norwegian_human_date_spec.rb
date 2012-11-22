@@ -1,6 +1,19 @@
 # encoding: utf-8
 require "timecop"
 describe NorwegianHumanDate do
+
+  describe ".formal" do
+
+    Timecop.freeze(Time.at(1353578081)) do
+      it 'translates Time.now into "torsdag 22. november"' do
+        NorwegianHumanDate.formal(Time.now).should eq "torsdag 22. november"
+      end
+      it 'translates Time.now+1.year into "fredag 22. november 2013"' do
+        NorwegianHumanDate.formal(Time.now+1.year).should eq "fredag 22. november 2013"
+      end
+    end
+  end
+
   describe ".relative" do
 
     Timecop.freeze(Time.at(1353578081)) do
@@ -29,6 +42,6 @@ describe NorwegianHumanDate do
       end
 
     end
-
   end
+
 end
