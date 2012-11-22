@@ -16,10 +16,6 @@ describe NorwegianHumanDate do
         NorwegianHumanDate.relative(Time.now+1.day).should eq "i morgen"
       end
 
-      it 'translates Time.now+1.day into "i morgen"' do
-        NorwegianHumanDate.relative(Time.now+1.day).should eq "i morgen"
-      end
-
       it 'translates Time.now+2.days into "lørdag"' do
         NorwegianHumanDate.relative(Time.now+2.days).should eq "lørdag"
       end
