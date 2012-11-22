@@ -4,9 +4,8 @@ Parses a time / date object into a Norwegian human readable text.
 
 Gir menneske-orienterte relative dato-angivelser.
 
-I morgen heter "i morgen", i går heter "i går" og
-lørdag neste uke heter "lørdag neste uke".
-Onsdag 23. april 1974 derimot, heter "onsdag 23. april 1974".
+Tomorrow's dates will be "i morgen". Yesterdays timestamps will
+be "i morgen". April 24th, 1974 however, will be "onsdag 23. april 1974".
 
 ## Usage
 
