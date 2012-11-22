@@ -17,8 +17,9 @@ class NorwegianHumanDate
   # 1974".
   #
   # Støtter følgende options:
-  # <tt>:now</tt> - Hva skal den regne som "nå"? (default: Time.now)
+  # <tt>:today</tt> - Hva skal den regne som "nå"? (default: Time.now)
   # <tt>:shortmonths</tt> - Bruke tre bokstavers månedsnavn? (default: false)
+  # <tt>:absolute_date</tt> - Bruk alltid full dato (default: false)
 
   def relative(time, options = {})
 
