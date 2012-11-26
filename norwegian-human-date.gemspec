@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'timecop'
-  s.add_dependency 'activesupport', ['>= 2.3.9', '< 4']
+  s.add_runtime_dependency 'activesupport', '~> 3.2.9'
 
 end
