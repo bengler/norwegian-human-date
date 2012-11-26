@@ -1,10 +1,7 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "./lib/norwegian_human_date"
-
 Gem::Specification.new do |s|
   s.name        = "norwegian-human-date"
-  s.version     = NorwegianHumanDate::VERSION
+  s.version     = "0.0.1"
   s.authors     = ["Bengler AS"]
   s.email       = ["dev@bengler.no"]
   s.homepage    = "https://github.com/bengler/norwegian-human-date"
@@ -18,5 +15,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'timecop'
   s.add_runtime_dependency 'activesupport', '~> 3.2.9'
-
 end

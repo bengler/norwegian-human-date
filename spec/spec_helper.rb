@@ -1,4 +1,6 @@
 require "timecop"
+require "norwegian_human_date"
+
 RSpec.configure do |config|
   config.before(:each) do
     t = Time.local(2012, 10, 02, 0, 0, 0)

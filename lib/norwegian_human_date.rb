@@ -1,5 +1,6 @@
 # encoding: utf-8
 require 'active_support/time'
+
 class NorwegianHumanDate
 
   VERSION = "0.0.1"
